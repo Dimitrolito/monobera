@@ -14,7 +14,7 @@ const config = {
   // pluginSearchDirs: false,
   plugins: [
     "@ianvs/prettier-plugin-sort-imports",
-    "prettier-plugin-tailwindcss",
+    "prettier-plugin-tailwindcss"
   ],
   tailwindConfig: "./packages/config/tailwind",
   importOrder: [
@@ -29,14 +29,14 @@ const config = {
     "^~/components/(.*)$",
     "^~/styles/(.*)$",
     "^~/(.*)$",
-    "^[./]",
+    "^[./]"
   ],
   importOrderSeparation: false,
   importOrderSortSpecifiers: true,
   importOrderBuiltinModulesToTop: true,
   importOrderParserPlugins: ["typescript", "jsx", "decorators-legacy"],
   importOrderMergeDuplicateImports: true,
-  importOrderCombineTypeAndValueImports: true,
+  importOrderCombineTypeAndValueImports: true
 };
 
 module.exports = config;
